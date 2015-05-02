@@ -1,5 +1,4 @@
     # Name - Kakali Mahapatra
-    # Student ID - 84803
     # Program to calculate sales commission for cars
 
 

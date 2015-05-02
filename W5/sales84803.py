@@ -1,5 +1,4 @@
 # Name - Kakali Mahapatra
-# Student ID - 84803
 # File I/O
 
 def main():

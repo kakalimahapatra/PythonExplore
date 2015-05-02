@@ -1,5 +1,5 @@
 #Kakali Mahapatra
-#ID - 84803
+#calculate suare root of a number
 
 def main():
 	import math

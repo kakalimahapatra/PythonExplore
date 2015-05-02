@@ -1,5 +1,4 @@
     # Name - Kakali Mahapatra
-    # Student ID - 84803
     # letters, digits and space calculation program
 
 

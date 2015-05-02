@@ -1,6 +1,5 @@
 # Name - Kakali Mahapatra
-# ID - 84803
-# Assignment -4 (String)
+#Exploring String in Python
 
 def main():
     
