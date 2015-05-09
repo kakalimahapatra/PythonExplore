@@ -1,0 +1,11 @@
+The Python module:
+
+- Ask user to enter a phrase
+
+- Print the phrase as a title where each word begins with an upper-case letter
+
+- Change all the spaces in the original phrase to '-' and display
+
+- Split the original phrase into a list and display
+
+- Create a new phrase that contains the words in the original phrase in reverse order and display

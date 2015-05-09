@@ -1,0 +1,12 @@
+Questions
+
+1- Use list comprehension to create a list containing all lower-case alphabet letters
+
+
+2- Write the shortest code to get a list of all keys in a dictionary called "names"
+
+
+3- Write the code to define a function getUniqueValues(dict) that returns a list of the
+unique values in a dictionary (no duplicate value)
+
+

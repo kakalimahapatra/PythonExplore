@@ -1,0 +1,72 @@
+
+Credit card numbers follow certain patterns. A credit card must have between 13 and 16 digits. It must  start with:
+•	4 for Visa cards
+•	5 for Master cards
+•	37 for American Express cards
+•	6 for Discover cards
+
+------------------------------------------------------------------------------------------------
+In 1954, Hans Luhn of IBM proposed an algorithm for validating credit card numbers. The algorithm is useful to determine if a card number is entered correctly or if a credit card is scanned correctly by a scanner. Almost all credit card numbers are generated following this validity check, commonly know as the Luhn check or the Modulus 10 check, which can be described as follows. For illustration, consider the card number 4388576018402625.
+1.	Double every second digit from right to left. If doubling of a digit results in a 2-digit number, add up the two digits to get a single-digit number.
+2 x 2 = 4
+2 x 2 = 4
+4 x 2 = 8
+1 x 2 = 2
+6 x 2 = 12  -> 3
+5 x 2 = 10  -> 1
+8 x 2 = 16  -> 7
+4 x 2 = 8
+2.	Add all the single digit numbers from step 1
+4 + 4 +8 + 2 +3 + 1 + 7 + 8 = 37
+3.	Add all digits in the odd places from right to left in the card number
+5 + 6 + 0 + 8 + 0 + 7 + 8 + 3 = 37
+4.	Sum the results from step 2 and step 3
+37 + 37 = 74
+5.	If the result from step 4 is divisible by 10, the card number is valid; otherwise, it’s invalid. For example, the number 4388576018402625 is invalid, but the number 4388576018410707 is a valid Visa card; the number 6011000593748745 is invalid, but the number 6011000593748746 is a valid Discover card.
+
+------------------------------------------------------------------------------------------------
+
+Project requirement:
+The Python code does the following:
+-	prompt users to enter a credit card number as a string 
+-	display whether the number is valid or not, and what type of card (if possible)
+The code should contain the following functions:
+-	main()
+-	isValid(…)	  returns True or False
+-	sumOfEvenPosition(…) returns number
+-	sumOfOddPosition (…)returns number
+
+//Return the number if it is single-digit number. Otherwise return the sum of the 2 digits
+-	getDigitSum(…) returns number
+
+------------------------------------------------------------------------------------------------
+
+
+Hints:
+•	There is no need to loop and test multiple card numbers in a single program run.
+•	I will test your code with my own Visa, MasterCard, and Discover cards.
+
+
+------------------------------------------------------------------------------------------------
+
+Sample run:
+Enter a credit card number: 4388576018410707
+This a good Visa card number
+----------------------------------
+Enter a credit card number: 5121071848156976
+This a good MasterCard card number
+----------------------------------
+Enter a credit card number: 6011000593748746
+This a good Discover card number
+--------------------------------------
+Enter a credit card number: 371515488281005
+This a good American Express card number
+---------------------------------------
+Enter a credit card number: 4388576018402625
+This an invalid Visa card number
+---------------------------------------
+Enter a credit card number: 6011000593748745
+This an invalid Discover card number
+---------------------------------------
+Enter a credit card number: 1555555555555555
+This an invalid card number

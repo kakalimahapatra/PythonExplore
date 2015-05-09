@@ -1,0 +1,6 @@
+Python module to ask user to enter a string and find the numbers of lower case letters, upper case letters, spaces, and digits in the string. 
+
+For example:
+Enter a an input string: There are 196 countries in the world. Asia has 27 countries.
+
+The string contains 5 digits, 2 upper-case letters, 41 lower-case letters, and 10 space characters

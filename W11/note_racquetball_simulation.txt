@@ -1,0 +1,7 @@
+It's a basic racquet ball similation program
+
+This program simulates a game of racquetball between two
+players called "A" and "B". The abilities of each player is
+indicated by a probability (a number between 0 and 1) that
+the player wins the point when serving. Player A always
+has the first serve.

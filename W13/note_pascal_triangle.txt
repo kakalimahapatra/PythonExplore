@@ -1,0 +1,11 @@
+
+The program asks user to enter a number from 1 to 15, then print the Pascal triangle with that size.
+
+
+
+For reference:
+
+https://drive.google.com/file/d/0B18FH3NJiMhZc3Y5OVJvTGdsdEE/view?usp=sharing
+http://www.mathsisfun.com/pascals-triangle.html
+
+

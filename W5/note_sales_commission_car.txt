@@ -1,0 +1,24 @@
+Python module to do the following:
+
+
+The code reads the file SALES.TXT, creates a new file TOTALS.TXT. Each line in TOTALS.TXT
+contains the total sale for each person. The last line should contain the grand total sales of all
+persons.
+
+Use string formatting to right-justified the person names and use a width of 12 for each
+sale total on each line.
+
+Use string formatting to give a width of 15 for the grand total sale at the bottom of 
+the TOTALS.TXT file.
+
+For example, the TOTALS.TXT file will look like this:
+
+      Name                 Total
+    Kelly,Victor             95
+        Lam,Gary             87
+         .......             XX
+         .......             XX
+
+Grand Total:            XXXXXX
+
+The file SALES.TXT should not be modified.

@@ -1,0 +1,129 @@
+
+Objective of the program:
+
+
+
+-Create Vehicle class with the following
+
+Properties:
+	fuelType; possible values 'gas', 'electric', 'hybrid', 'hydrogen'
+	fuelLevel: integer number 0 to 100
+	speed
+	color
+	engineOn: boolean
+	make
+	model
+	
+Methods
+    __init__ with parameters make, model, fuelType
+	getXXXX and setXXXX methods
+	start()
+	stop()
+	addFuel()
+	
+	
+-Create SUV class, subclass of Vehicle with the following:
+	
+Properties:
+	
+	engineType: string, "V4", "V6", "V8"
+	chassisType: "car", "truck"
+	4wheelDrive: True of False
+	style: "family", "sport", "luxury", "rugged"
+	
+	
+Methods:
+	__init__ with parameters make, model, fuelType, style
+	start(): 
+		The fuel level is decrease by 10 (out of 100)
+		print a text message "SUV started, fuelLevel is now  XXX"
+	stop(): print a text message "SUV stopped"
+	run(): print a text message "SUV is running", 
+		decrease fuelLevel by 50,
+		but fuelLevel cannot be less than 0
+	accelerate():
+		add 5 to the current speed
+		subtract 10 from fuelLevel
+	addFuel(): print a text message "SUV is fueling",
+		then add 60 to current fuelLevel, but
+		fuelLevel cannot exceed 100
+	
+- Create Sedan class, subclass of Vehicle with the following:
+	
+Properties:
+	engine: number, 1.6, 2.0, 2.4, 3.0
+	sizeType: "subcompact", "compact", "midsize", "fullsize"
+	doors: number 2, 4
+	style: "family", "sport", "luxury"
+	
+	
+Methods:
+	__init__ with parameters make, model, fuelType, style, sizeType
+	start(): 
+		The fuel level is decrease by 5 (out of 100)
+		print a text message "Sedan started, fuelLevel is now XXX"
+	stop(): print a text message "Sedan stopped"
+	run(): print a text message "Sedan is running", 
+		decrease fuelLevel by 30,
+		but fuelLevel cannot be less than 0
+	accelerate():
+		add 10 to the current speed
+		subtract 7 from fuelLevel
+	addFuel(): print a text message "Sedan is fueling", 
+		then add 80 to current fuelLevel, but fuelLevel cannot exceed 100
+	
+
+The start() method should update the fuelLevel for each class.
+For a SUV, every time start() is invoked, the fuel level is decrease by 10 (out of 100)
+For a Sedan, every time start() is invoked, the fuel level is decrease by 5 (out of 100)
+
+Use main() to test your classes. Here is a sample test, add more if you have time:
+
+	sedan1 = Sedan(.......)
+	sedan1.addFuel()
+	sedan1.start();
+	sedan1.run()
+	sedan1.accelerate()
+	print("sedan1 speed", sedan1.getSpeed())
+	print("sedan1 fuelLevel", sedan1.getFuelLevel())
+	sedan1.accelerate()
+	print("sedan1 speed", sedan1.getSpeed())
+	print("sedan1 fuelLevel", sedan1.getFuelLevel())
+	sedan1.addFuel()
+	print("sedan1 fuelLevel", sedan1.getFuelLevel())
+	sedan1.stop()
+	print("sedan1 fuelLevel", sedan1.getFuelLevel())
+	print("sedan1 speed", sedan1.getSpeed())
+	
+	
+	suv1 = SUV(.......)
+	suv1.addFuel()
+	suv1.start();
+	suv1.run()
+	suv1.accelerate()
+	print("suv1 speed", suv1.getSpeed())
+	print("suv1 fuelLevel", suv1.getFuelLevel())
+	suv1.accelerate()
+	print("suv1 speed", suv1.getSpeed())
+	print("suv1 fuelLevel", suv1.getFuelLevel())
+	suv1.addFuel()
+	print("suv1 fuelLevel", suv1.getFuelLevel())
+	suv1.stop()
+	print("suv1 fuelLevel", suv1.getFuelLevel())
+	print("suv1 speed", suv1.getSpeed())
+	
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+

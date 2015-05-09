@@ -1,0 +1,70 @@
+The car dealer "Acme Auto" sells many types of cars: new cars and used cars, economy cars and luxury cars. A salesperson working for the dealership can earn different type of commission depending on what car he sell. Here are the rules for calculating the sale commission:
+
+For New cars
+              				Economy car				Luxury car
+Commission			     2.8% of sale price			  3.4% of sale price
+
+For Used cars
+              				Economy car				Luxury car
+Commission			     3.2% of sale price			  3.5% of sale price
+
+In addition to rules above,  the commision is also adjusted based on  the number of years the salesperson has worked at the dealership:
+
+4  to 8 years                  9 to 16 years            17 years or more
+Commission			  Add $150.00		Add $280.00               Add $350.00
+
+
+------------------------------------------------------------------------------------------------
+
+
+This program reads the following 4 user inputs and calculates a sale commission:
+
+
+-	Car Sale price (can have decimal fraction)
+-	New or used car (character N or U input)
+-	Economy or luxury car (character E or L input)
+-	Number of years salesperson  works at dealership (whole number, 0 or greater)
+-	Print only 2 decimal digits for the commision amount 
+-	Car sale price must be greater than 0 and cannot exceed $300000.00
+-	Your program should print an error message if ‘N’ or ‘U’ is not entered for new/used car
+
+
+ and ‘E’ or ‘L’ is not entered for economy/luxury car. Also you have to check that car sale price and work years have to be greater than or equal 0.
+
+Here are some sample runs of the program:
+
+This program computes car sale commission for Acme Auto
+Enter car sale price:                                        22456.99
+Enter ‘N’ for New or ‘U’ for Used car:          N
+Enter ‘E’ for Economy or ‘L’ for Luxury car: E
+Enter salesperson years of employment:    	12
+
+The sale commission is :   $XXX.XX
+
+_________________________________________________________
+
+This program computes car sale commission for Acme Auto
+Enter car sale price:                                        -12345.78
+Invalid car sale price. It must be greater than 0 and cannot exceed 300000.00
+
+_________________________________________________________
+
+This program computes car sale commission for Acme Auto
+Enter car sale price:                                        312345.78
+Invalid car sale price. It must be greater than 0 and cannot exceed 300000.00
+
+_________________________________________________________
+
+This program computes car sale commission for Acme Auto
+Enter car sale price:                                        22456.99
+Enter ‘N’ for New or ‘U’ for Used car:          A
+Invalid code for car type. It must be 'N' or 'U'.
+
+_________________________________________________________
+
+This program computes car sale commission for Acme Auto
+Enter car sale price:                                        22456.99
+Enter ‘N’ for New or ‘U’ for Used car:          N
+Enter ‘E’ for Economy or ‘L’ for Luxury car: T
+Invalid code for car class. It must be  'E' or 'L'.
+
